@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Nonstandard Dakuten Catalog</title>
+	<meta content="Matheus Avellar" name="author">
+	<!-- <meta name="description" content=""> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="referrer" content="no-referrer"> -->
+	<!-- <link rel="preconnect" href="https://cdn.avl.la/" crossorigin> -->
+	<style>
+.vertical-text {
+	line-height: 1em;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+}
+.force-horizontal {
+	writing-mode: horizontal-tb;
+}
+.highlight {
+	color: red;
+}
+
+.standard, .obsolete {
+	color: #c1c1c1;
+}
+.not-found::after {
+	content: "?";
+	vertical-align: super;
+	font-size: .65em;
+	margin-left: -0.2em;
+}
+
+header, main, footer {
+	max-width: 800px;
+	margin: auto;
+}
+footer {
+	padding: 5rem 0 3rem;
+}
+section + section {
+	margin-top: 5rem;
+}
+
+h2 {
+	font-size: 4rem;
+	margin: 1rem 0;
+}
+
+.bubble {
+	font-size: 2em;
+	display: inline-block;
+	margin: 0;
+	padding: 1rem;
+	border: 1px solid;
+	border-radius: 2rem;
+}
+
+figure.vertical {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1rem;
+	margin: 1rem 0;
+}
+figure.vertical img {
+	max-width: 400px;
+}
+
+.syllabary {
+	font-size: 1.5rem;
+	margin: auto;
+	border-collapse: collapse;
+}
+.syllabary a[href] {
+	text-decoration: none;
+	color: red;
+}
+
+th:not(:empty) {
+	border: 1px solid;
+}
+th, td {
+	padding: .25rem;
+	text-align: center;
+}
+
+.vertical-ellipsis {
+	letter-spacing: -0.75em;
+	margin-inline-start: -0.5em;
+	margin-inline-end: 0.5em;
+}
+
+@media screen and (max-width: 800px) {
+	figure.vertical {
+		grid-template-columns: auto;
+	}
+	.vertical-text {
+		writing-mode: horizontal-tb;
+	}
+	.vertical-ellipsis {
+		all: revert;
+	}
+}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Nonstandard Dakuten Catalog</h1>
+		<p>
+			Sources of nonstandard dakuten use. Dakuten (゛) are Japanese diacritics
+			used alongside some characters – such as か (ka), さ (sa) and た (ta) – to
+			change their consonant's sound – が (ga), ざ (za) and だ (da).
+			However, in popular culture, dakuten are sometimes used with "disallowed"
+			characters, such as あ (a).
+		</p>
+		<p>
+			Characters in the table below are shown in <i style="color:red">red</i>
+			links if they have been found; in <i>black</i> if they haven't been found; and
+			in <i style="color:#c1c1c1">grey</i> if they are standard use. Shown here
+			is only Hiragana, though Katakana is sometimes used, even in examples in
+			this page. You can read more about the writing system's quirks on
+			<a href="https://en.wikipedia.org/wiki/Hiragana">Wikipedia</a>.
+		</p>
+		<table class="syllabary">
+		<tbody>
+			<tr>
+				<th></th>
+				<th><i>a</i></th>
+				<th><i>i</i></th>
+				<th><i>u</i></th>
+				<th><i>e</i></th>
+				<th><i>o</i></th>
+			</tr>
+			<tr>
+				<th title="Vowels">∅</th>
+				<td><a href="#%E3%81%82">あ゙</a></td>
+				<td><span class="not-found">い</span></td>
+				<td><span class="not-found">う</span></td>
+				<td><span class="not-found">え</span></td>
+				<td><span class="not-found">お</span></td>
+			</tr>
+			<tr>
+				<th>k → g</th>
+				<td><span class="standard">が</span></td>
+				<td><span class="standard">ぎ</span></td>
+				<td><span class="standard">ぐ</span></td>
+				<td><span class="standard">げ</span></td>
+				<td><span class="standard">ご</span></td>
+			</tr>
+			<tr>
+				<th>s → z</th>
+				<td><span class="standard">ざ</span></td>
+				<td><span class="standard">じ</span></td>
+				<td><span class="standard">ず</span></td>
+				<td><span class="standard">ぜ</span></td>
+				<td><span class="standard">ぞ</span></td>
+			</tr>
+			<tr>
+				<th>t → d</th>
+				<td><span class="standard">だ</span></td>
+				<td><span class="standard">ぢ</span></td>
+				<td><span class="standard">づ</span></td>
+				<td><span class="standard">で</span></td>
+				<td><span class="standard">ど</span></td>
+			</tr>
+			<tr>
+				<th>n</th>
+				<td><span class="not-found">な</span></td>
+				<td><span class="not-found">に</span></td>
+				<td><a href="#%E3%81%AC">ぬ゙</a></td>
+				<td><span class="not-found">ね</span></td>
+				<td><span class="not-found">の</span></td>
+				<td><span class="not-found">ん</span></td>
+			</tr>
+			<tr>
+				<th>h → b</th>
+				<td><span class="standard">ば</span></td>
+				<td><span class="standard">び</span></td>
+				<td><span class="standard">ぶ</span></td>
+				<td><span class="standard">べ</span></td>
+				<td><span class="standard">ぼ</span></td>
+			</tr>
+			<tr>
+				<th>m</th>
+				<td><span class="not-found">ま</span></td>
+				<td><span class="not-found">み</span></td>
+				<td><span class="not-found">む</span></td>
+				<td><span class="not-found">め</span></td>
+				<td><span class="not-found">も</span></td>
+			</tr>
+			<tr>
+				<th>y</th>
+				<td><a href="#%E3%82%84">や゙</a></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Yi_(kana)"><span class="obsolete">𛀆</span></a></td>
+				<td><span class="not-found">ゆ</span></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Ye_(kana)"><span class="obsolete">𛀁</span></a></td>
+				<td><span class="not-found">よ</span></td>
+			</tr>
+			<tr>
+				<th>r</th>
+				<td><span class="not-found">ら</span></td>
+				<td><span class="not-found">り</span></td>
+				<td><a href="#%E3%82%8B">る゙</a></td>
+				<td><span class="not-found">れ</span></td>
+				<td><span class="not-found">ろ</span></td>
+			</tr>
+			<tr>
+				<th>w</th>
+				<td><span class="not-found">わ</span></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Wi_(kana)"><span class="obsolete">ゐ</span></a></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Wu_(kana)"><span class="obsolete">𛄟</span></a></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/We_(kana)"><span class="obsolete">ゑ</span></a></td>
+				<td><span class="not-found">を</span></td>
+			</tr>
+		</tbody>
+		</table>
+		<hr>
+	</header>
+	<main>
+		<section>
+			<h2 id="あ">あ゙ / aﾞ</h2>
+			<figure class="vertical">
+				<img src="img/ranma12-p122.jpg">
+				<figcaption>
+					<p class="bubble">
+						<span class="vertical-text"><span class="highlight force-horizontal">あ゙</span>〜〜っ</span>
+					</p>
+					<p class="cite">
+						—Ranma ½ (1988), vol.1, Part 6: 心も体も (p.122). ISBN: 4-09-122031-2.
+					</p>
+				</figcaption>
+			</figure>
+
+			<figure class="vertical">
+				<img src="img/ranma12-p153.jpg">
+				<figcaption class="vertical">
+					<p class="bubble">
+						<span class="vertical-text"><span class="highlight force-horizontal">あ゙</span>〜〜〜っ‼</span>
+					</p>
+					<p class="cite">
+						—Ranma ½ (1988), vol.1, Part 7: すぐにわかるよ (p.153). ISBN: 4-09-122031-2.
+					</p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2 id="ぬ">ぬ゙ / nuﾞ</h2>
+			<figure class="vertical">
+				<img src="img/ranma12-p107.jpg">
+				<figcaption class="vertical">
+					<p class="bubble">
+						<span class="vertical-text"><span class="highlight force-horizontal">ぬ゙</span>っ‼</span>
+					</p>
+					<p class="cite">
+						—Ranma ½ (1988), vol.1, Part 5: 木の上のヤカンの女へ (p.107). ISBN: 4-09-122031-2.
+					</p>
+				</figcaption>
+			</figure>
+
+			<figure class="vertical">
+				<img src="img/ranma12-p108.jpg">
+				<figcaption class="vertical">
+					<p class="bubble">
+						<span class="vertical-text"><span class="highlight force-horizontal">ぬ゙</span><span class="highlight force-horizontal">ぬ゙</span><span class="highlight force-horizontal">ぬ゙</span><span class="vertical-ellipsis">...</span></span>
+					</p>
+					<p class="cite">
+						—Ranma ½ (1988), vol.1, Part 5: 木の上のヤカンの女へ (p.108). ISBN: 4-09-122031-2.
+					</p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2 id="や">や゙ / yaﾞ</h2>
+			<figure class="vertical">
+				<img src="img/kimetsu-p10.jpg">
+				<figcaption class="vertical">
+					<p class="bubble">
+						<span class="vertical-text">
+							地獄がねぇなら<br>
+							俺が作って<span class="highlight force-horizontal">や゙</span><span class="force-horizontal">る゙</span><span class="force-horizontal">ァ゙</span>ア‼
+						</span>
+					</p>
+					<p class="cite">
+						—Kimetsu no Yaiba (2020), vol.19, Part 161: 蝶の羽ばたき (p.10). ISBN: 978-4-08-882204-4.
+					</p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2 id="る">る゙ / ruﾞ</h2>
+			<figure class="vertical">
+				<img src="img/kimetsu-p10.jpg">
+				<figcaption class="vertical">
+					<p class="bubble">
+						<span class="vertical-text">
+							地獄がねぇなら<br>
+							俺が作って<span class="force-horizontal">や゙</span><span class="highlight force-horizontal">る゙</span><span class="force-horizontal">ァ゙</span>ア‼
+						</span>
+					</p>
+					<p class="cite">
+						—Kimetsu no Yaiba (2020), vol.19, Part 161: 蝶の羽ばたき (p.10). ISBN: 978-4-08-882204-4.
+					</p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<hr>
+	</main>
+	<footer>
+		<p>
+			If you need to create nonstandard dakuten characters, check out
+			<a href="https://tools.ikunaga.net/dakuten/">Dakuten maker</a>.
+		</p>
+		<p>
+			This project is unaffiliated with the mangas shown above, who own their
+			respective copyrights. This is a personal catalog, and not for profit.
+		</p>
+		<p>
+			Made with ♥︎&#xFE0E;<!--&#xFE0E;[Ref] stackoverflow.com/a/38452396/4824627-->
+			by <a href="https://avl.la/">Matheus Avellar</a><br>
+			Rio de Janeiro, 2025
+		</p>
+	</footer>
+	<!-- <link rel="stylesheet" href="https://cdn.avl.la/font/inter.css"> -->
+</body>
+</html>
