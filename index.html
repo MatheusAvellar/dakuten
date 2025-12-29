@@ -17,9 +17,6 @@
 .force-horizontal {
 	writing-mode: horizontal-tb;
 }
-.highlight {
-	color: red;
-}
 
 .standard, .obsolete {
 	color: #c1c1c1;
@@ -35,7 +32,7 @@ header, main, footer {
 	max-width: 800px;
 	margin: auto;
 }
-header p {
+header p, .large-text p {
 	font-size: 1.25rem;
 	line-height: 1.25;
 }
@@ -46,9 +43,12 @@ section + section {
 	margin-top: 5rem;
 }
 
-h2 {
+h2, h3 {
 	font-size: 4rem;
 	margin: 1rem 0;
+}
+h2.small {
+	font-size: 2rem;
 }
 
 .bubble {
@@ -76,7 +76,7 @@ figure.vertical img {
 	margin: auto;
 	border-collapse: collapse;
 }
-.syllabary a[href] {
+.syllabary a[href], .red, .highlight {
 	text-decoration: none;
 	color: red;
 }
@@ -112,8 +112,8 @@ th, td {
 	<header>
 		<h1>Nonstandard Dakuten Catalog</h1>
 		<p>
-			This is a list of the earliest use of each nonstandard dakuten I could
-			find.
+			This is a list of examples of nonstandard dakuten in use in published media
+			that I could find.
 		</p>
 		<p>
 			Dakuten, ゛, are Japanese diacritics used alongside some characters – such
@@ -123,7 +123,7 @@ th, td {
 			used with "disallowed" characters, such as あ (a).
 		</p>
 		<p>
-			Characters in the table below are shown in <i style="color:red">red</i>
+			Characters in the table below are shown in <i class="red">red</i>
 			links if they have been found; in <i>black</i> if they haven't been found; and
 			in <i style="color:#c1c1c1">grey</i> if they are standard use. Shown here
 			is only Hiragana, though Katakana is sometimes used, even in examples in
@@ -174,7 +174,7 @@ th, td {
 			</tr>
 			<tr>
 				<th>n</th>
-				<td><span class="not-found">な</span></td>
+				<td><a href="#%E3%81%AA">な゙</a></td>
 				<td><span class="not-found">に</span></td>
 				<td><a href="#%E3%81%AC">ぬ゙</a></td>
 				<td><span class="not-found">ね</span></td>
@@ -200,9 +200,9 @@ th, td {
 			<tr>
 				<th>y</th>
 				<td><a href="#%E3%82%84">や゙</a></td>
-				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Yi_(kana)"><span class="obsolete">𛀆</span></a></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Yi_(kana)"><span class="obsolete not-found">𛀆</span></a></td>
 				<td><span class="not-found">ゆ</span></td>
-				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Ye_(kana)"><span class="obsolete">𛀁</span></a></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Ye_(kana)"><span class="obsolete not-found">𛀁</span></a></td>
 				<td><span class="not-found">よ</span></td>
 			</tr>
 			<tr>
@@ -216,9 +216,9 @@ th, td {
 			<tr>
 				<th>w</th>
 				<td><span class="not-found">わ</span></td>
-				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Wi_(kana)"><span class="obsolete">ゐ</span></a></td>
-				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Wu_(kana)"><span class="obsolete">𛄟</span></a></td>
-				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/We_(kana)"><span class="obsolete">ゑ</span></a></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Wi_(kana)"><span class="obsolete not-found">ゐ</span></a></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/Wu_(kana)"><span class="obsolete not-found">𛄟</span></a></td>
+				<td style="background:#eee"><a href="https://en.wikipedia.org/wiki/We_(kana)"><span class="obsolete not-found">ゑ</span></a></td>
 				<td><span class="not-found">を</span></td>
 			</tr>
 		</tbody>
@@ -248,6 +248,21 @@ th, td {
 					</p>
 					<p class="cite">
 						—<a href="https://myanimelist.net/manga/23/Ranma_%C2%BD">Ranma ½</a> (1988), vol.1, Part 7: すぐにわかるよ (p.153). ISBN: 4-09-122031-2.
+					</p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2 id="な">な゙ / naﾞ</h2>
+			<figure class="vertical">
+				<img src="img/one-piece-v50-p80.jpg">
+				<figcaption>
+					<p class="bubble">
+						<span class="vertical-text"><span class="highlight force-horizontal">な゙</span>かっ<br>た<span class="vertical-ellipsis">...</span><span class="force-horizontal">‼‼</span></span>
+					</p>
+					<p class="cite">
+						—<a href="https://myanimelist.net/manga/13/One_Piece">One Piece</a> (2008), vol.50 (再び辿りつく), ch.485 (麦わらの一味・海賊狩りのゾロ). ISBN: 978-4-08-874521-3.
 					</p>
 				</figcaption>
 			</figure>
@@ -333,21 +348,106 @@ th, td {
 			</figure>
 		</section>
 
-		<hr>
+		<section>
+			<div class="large-text">
+				<hr>
+				<h2 id="other" class="small">Other interesting uses</h2>
+				<p>
+					While not exactly <i>nonstandard</i>, some uses of the dakuten are
+					infrequent and may not be well-known.
+				</p>
+				<p>
+					For example, when repeating kanas, one may use an iteration mark.
+					For Kanji, that's 々 (nicknamed
+					<ruby>ノ<rp>(</rp><rt>no</rt><rp>)</rp>マ<rp>(</rp><rt>ma</rt><rp>)</rp></ruby>
+					for its appearance) and, more rarely, 〻 for vertical text. For Hiragana,
+					ゝ is used. And, for Katakana, it's ヽ. Additionally, there's 〱, which
+					indicates a repetition of 2–4 of the previous kana in vertical text.
+					Finally, whole words may be repeated using 〃.
+				</p>
+				<p>
+					Apart from the Kanji and word iteration marks (々, 〻 and 〃), there
+					also exist dakuten versions of these:
+					<a href="#%E3%82%9D" class="red">ゞ</a>,
+					<a href="#%E3%83%BD" class="red">ヾ</a> and
+					<a href="#%E3%80%B1" class="red">〲</a>.
+					These indicate that, when the previous kana is repeated, its sound is
+					modified.
+				</p>
+			</div>
+			<h3 id="ゝ">ゞ</h2>
+			<figure class="vertical">
+				<img src="img/misuzu-p23.jpg">
+				<figcaption>
+					<p class="bubble">
+						<span class="vertical-text">
+							「みす<span class="highlight">ゞ</span>もこの海を見ていたんですよ」
+						</span>
+					</p>
+					<p>
+						That is, みすず.
+					</p>
+					<p class="cite">
+						—Yoko Shimada (1995). "金子みすゞへの旅", p.23.
+					</p>
+				</figcaption>
+			</figure>
+
+			<h3 id="ヽ">ヾ</h2>
+			<figure class="vertical">
+				<img src="img/dialysis-p1.jpg">
+				<figcaption>
+					<p class="bubble">
+						[…]起サ<span class="highlight">ヾ</span>リキ.
+					</p>
+					<p>
+						That is, サザリキ.
+					</p>
+					<p class="cite">
+						—Sugie Shirō (1931).
+						"<a href="https://www.jstage.jst.go.jp/article/jsb1928/25/12/25_12_1537/_article/-char/ja/">ぢふてりー毒素ノ透折ニ就テ</a>", p.1. 日本微生物學病理學雜誌.
+						doi:<a href="https://doi.org/10.3412/jsb1928.25.12_1537">10.3412/jsb1928.25.12_1537</a>
+					</p>
+				</figcaption>
+			</figure>
+
+			<h3 id="〱">〲</h2>
+			<figure class="vertical">
+				<img src="img/tsurezuregusa.jpg">
+				<figcaption>
+					<p class="bubble">
+						<span class="vertical-text">
+							<ruby>
+								所<rp>(</rp><rt>ところ</rt><rp>)</rp>々<rp>(</rp><rt class="highlight">〲</rt><rp>)</rp>
+							</ruby>
+						</span>
+					</p>
+					<p>
+						That is, ところどころ.
+					</p>
+					<p class="cite">
+						—<a href="https://commons.wikimedia.org/wiki/File:IterationMarks600.jpg">Tsurezuregusa</a> (c.1332), p.? [via Wikimedia Commons].
+					</p>
+				</figcaption>
+			</figure>
+		</section>
 	</main>
 	<footer>
+		<hr>
 		<p>
 			If you need to create nonstandard dakuten characters, check out
 			<a href="https://tools.ikunaga.net/dakuten/">Dakuten maker</a>.
 		</p>
 		<p>
-			This project is unaffiliated with the mangas shown above, who own their
-			respective copyrights. This is a personal catalog, and not for profit.
+			This project is unaffiliated with the books, mangas and other media shown
+			above, who own their respective copyrights. This is a personal, not for
+			profit catalog, aimed at education and study. No revenue is made from this
+			website.
 		</p>
 		<p>
 			Made with ♥︎&#xFE0E;<!--&#xFE0E;[Ref] stackoverflow.com/a/38452396/4824627-->
 			by <a href="https://avl.la/">Matheus Avellar</a><br>
-			Rio de Janeiro, 2025
+			Rio de Janeiro, Brazil – 2025
 		</p>
 	</footer>
 	<!-- <link rel="stylesheet" href="https://cdn.avl.la/font/inter.css"> -->
