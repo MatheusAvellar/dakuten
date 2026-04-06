@@ -6,13 +6,14 @@
 	<meta content="Matheus Avellar" name="author">
 	<!-- <meta name="description" content=""> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <meta name="referrer" content="no-referrer"> -->
-	<!-- <link rel="preconnect" href="https://cdn.avl.la/" crossorigin> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<style>
 .vertical-text {
 	line-height: 1em;
 	text-orientation: upright;
 	writing-mode: vertical-rl;
+	font-family: "Noto Sans JP", sans-serif;
 }
 .force-horizontal {
 	writing-mode: horizontal-tb;
@@ -111,6 +112,18 @@ th, td {
 		all: revert;
 	}
 }
+
+footer .at {
+	fill: none;
+	stroke: #000;
+	stroke-width: 1.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	height: 1.25em;
+	padding: 0.125em 0;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
 	</style>
 </head>
 <body>
@@ -200,7 +213,7 @@ th, td {
 				<td><span class="not-found">み</span></td>
 				<td><span class="not-found">む</span></td>
 				<td><span class="not-found">め</span></td>
-				<td><span class="not-found">も</span></td>
+				<td><a href="#%E3%82%82">も゙</span></td>
 			</tr>
 			<tr>
 				<th>y</th>
@@ -342,6 +355,24 @@ th, td {
 					</p>
 					<p class="cite">
 						—<a href="https://myanimelist.net/manga/133029/Youjo_Life">Youjo Life!</a> (2019), vol.8 (p.1).
+					</p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2 id="も">も゙ / moﾞ</h2>
+			<figure class="vertical">
+				<img src="img/berserk-v26-p188.jpg">
+				<figcaption>
+					<p class="bubble">
+						<span class="vertical-text">
+							<span class="highlight force-horizontal">モ゙</span>〜
+						</span>
+					</p>
+					<p class="cite">
+						—<a href="https://myanimelist.net/manga/2/Berserk">Berserk</a> (2003), vol.26 Part 225: 狂戦士の甲冑① (p.9). ISBN: 978-4-592-13724-5.<br>
+						<small>Found by "Speeth", sent via email</small>
 					</p>
 				</figcaption>
 			</figure>
@@ -497,9 +528,11 @@ th, td {
 		<p>
 			Made with ♥︎&#xFE0E;<!--&#xFE0E;[Ref] stackoverflow.com/a/38452396/4824627-->
 			by <a href="https://avl.la/">Matheus Avellar</a><br>
-			Rio de Janeiro, Brazil – 2025
+			Contact: m<svg aria-label="@" class="at" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path></svg>avl.la<br>
+			Rio de Janeiro (Brazil), 2025–
 		</p>
 	</footer>
-	<!-- <link rel="stylesheet" href="https://cdn.avl.la/font/inter.css"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
 </body>
 </html>
